@@ -1,0 +1,15 @@
+{
+  "name": "ynw-node",
+  "version": "0.0.1",
+  "description": "utils for ynw",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["ynw"],
+  "author": "liqiang0335",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liqiang0335/ynw-node.git"
+  },
+  "homepage": "https://github.com/liqiang0335/ynw-node#readme"
+}
