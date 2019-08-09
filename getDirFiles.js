@@ -1,9 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 
+const excludes = /[\\\/]+[._]/;
+
+/**
+ * @return {Array<{filePath,mtime,basename,dirname, extname}>}
+ */
 const getDirFiles = function() {
   const result = [];
   return function getFiles(folder) {
+    if (excludes.test(folder)) {
+      return;
+    }
     const files = fs.readdirSync(folder);
     for (let name of files) {
       const filePath = path.join(folder, name);
